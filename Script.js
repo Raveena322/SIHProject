@@ -723,11 +723,29 @@ function initializeMonasteryModal() {
         openModal(title.textContent.trim(), card.querySelector('img')?.src || '');
     });
 
+    // Helper to find info by display name using exact, case-insensitive, or slug match
+    function findMonasteryInfoByName(name) {
+        if (!MONASTERIES_INFO) return null;
+        if (MONASTERIES_INFO[name]) return MONASTERIES_INFO[name];
+        const lowerTarget = String(name || '').toLowerCase();
+        // Case-insensitive exact
+        for (const key in MONASTERIES_INFO) {
+            if (key.toLowerCase() === lowerTarget) return MONASTERIES_INFO[key];
+        }
+        // Fallback to slug matching without relying on external slugify order
+        const toSlug = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        const targetSlug = toSlug(name);
+        for (const key in MONASTERIES_INFO) {
+            if (toSlug(key) === targetSlug) return MONASTERIES_INFO[key];
+        }
+        return null;
+    }
+
     function openModal(name, imgSrc) {
         if (titleEl) titleEl.textContent = name;
         if (imgEl) imgEl.src = imgSrc;
-        // Prefer comprehensive JSON if loaded
-        const data = (MONASTERIES_INFO && MONASTERIES_INFO[name]) ? MONASTERIES_INFO[name] : info[name];
+        // Prefer comprehensive JSON if loaded, with robust name matching
+        const data = findMonasteryInfoByName(name) || info[name];
         if (aboutEl) aboutEl.textContent = data ? data.about : 'Details coming soon.';
         if (pointsEl) {
             pointsEl.innerHTML = '';
