@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Festivals - Sikkim Monasteries</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-mountain text-3xl text-red-600 mr-3"></i>
+                    <span class="text-2xl font-bold text-gray-800">Sikkim Monasteries</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-red-600">Home</a>
+                    <a href="monasteries.html" class="text-gray-700 hover:text-red-600">Explore Monasteries</a>
+                    <a href="map.html" class="text-gray-700 hover:text-red-600">Map</a>
+                    <a href="events.html" class="text-red-600 font-semibold">Events</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-red-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                <a href="monasteries.html" class="block py-2 text-gray-700">Explore Monasteries</a>
+                <a href="map.html" class="block py-2 text-gray-700">Map</a>
+                <a href="events.html" class="block py-2 text-red-600 font-semibold">Events</a>
+                <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-20 pb-12 bg-gradient-to-r from-red-600 to-red-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Events & Festivals</h1>
+            <p class="text-xl md:text-2xl">Experience the vibrant cultural celebrations of Sikkim</p>
+        </div>
+    </section>
+
+    <!-- Event Details Modal -->
+    <div id="event-modal" class="feature-modal hidden">
+        <div class="feature-modal-backdrop"></div>
+        <div class="feature-modal-dialog">
+            <button class="feature-modal-close" aria-label="Close"><i class="fas fa-times"></i></button>
+            <div class="feature-modal-media">
+                <img id="event-image" src="" alt="Event image" loading="lazy">
+            </div>
+            <div class="feature-modal-content">
+                <h3 id="event-title" class="text-2xl font-bold mb-2"></h3>
+                <p id="event-subtitle" class="text-gray-600 mb-3"></p>
+                <p class="text-sm text-gray-500 mb-4"><span id="event-date"></span> • <span id="event-duration"></span> • <span id="event-location"></span></p>
+                <p id="event-description" class="text-gray-700 mb-4"></p>
+                <h4 class="text-sm font-semibold text-gray-800 mb-2">Interesting facts</h4>
+                <ul id="event-facts" class="list-disc pl-5 space-y-2 text-gray-700"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Filters -->
+    <section class="py-8 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <button id="all-events" class="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition duration-300">
+                    All Events
+                </button>
+                <button id="upcoming-events" class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition duration-300">
+                    Upcoming
+                </button>
+                <button id="festivals" class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition duration-300">
+                    Festivals
+                </button>
+                <button id="ceremonies" class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition duration-300">
+                    Ceremonies
+                </button>
+                <button id="dances" class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition duration-300">
+                    Dances
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Timeline -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Upcoming Events</h2>
+            
+            <!-- Event 1 -->
+            <div class="event-card mb-8" data-category="festival" data-status="upcoming">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="md:col-span-1">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Losar Festival" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <div class="md:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-calendar-alt text-red-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Losar Festival</h3>
+                                <p class="text-gray-600">Tibetan New Year Celebration</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4 text-sm text-gray-600">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>February 28 to 2 March, 2025</span>
+                            <i class="fas fa-clock ml-4 mr-2"></i>
+                            <span>3 Days</span>
+                            <i class="fas fa-map-marker-alt ml-4 mr-2"></i>
+                            <span>Rumtek Monastery</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Losar is the most important festival in Tibetan Buddhism, marking the beginning of the new year. The festival features traditional dances, prayers, and colorful ceremonies. Visitors can witness the spectacular Cham dances performed by monks in elaborate costumes and masks.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-semibold">Festival</span>
+                            <button class="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition duration-300 event-learn-more">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card mb-8" data-category="ceremony" data-status="upcoming">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="md:col-span-1">
+                        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Saga Dawa" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <div class="md:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-pray text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Saga Dawa</h3>
+                                <p class="text-gray-600">Buddha's Birth, Enlightenment & Parinirvana</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4 text-sm text-gray-600">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>May 28, 2025</span>
+                            <i class="fas fa-clock ml-4 mr-2"></i>
+                            <span>Full Day</span>
+                            <i class="fas fa-map-marker-alt ml-4 mr-2"></i>
+                            <span>All Monasteries</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Saga Dawa is one of the most sacred days in Buddhism, commemorating three major events in Buddha's life: his birth, enlightenment, and parinirvana. Special prayers, butter lamp offerings, and circumambulation ceremonies are held throughout the day.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Ceremony</span>
+                            <button class="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition duration-300 event-learn-more">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-card mb-8" data-category="dance" data-status="upcoming">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="md:col-span-1">
+                        <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tsechu Festival" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <div class="md:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-yellow-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-mask text-yellow-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Tsechu Festival</h3>
+                                <p class="text-gray-600">Masked Dance Performance</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4 text-sm text-gray-600">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>October 2-4, 2025</span>
+                            <i class="fas fa-clock ml-4 mr-2"></i>
+                            <span>3 Days</span>
+                            <i class="fas fa-map-marker-alt ml-4 mr-2"></i>
+                            <span>Enchey Monastery</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            The Tsechu Festival features spectacular masked dances performed by monks, depicting various Buddhist deities and stories. These sacred dances are believed to bring blessings and ward off evil spirits. The festival includes colorful costumes, traditional music, and elaborate rituals.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">Dance</span>
+                            <button class="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition duration-300 event-learn-more">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="event-card mb-8" data-category="ceremony" data-status="upcoming">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="md:col-span-1">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Guru Rinpoche Day" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <div class="md:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-star text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Guru Rinpoche Day</h3>
+                                <p class="text-gray-600">Celebration of Padmasambhava</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4 text-sm text-gray-600">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>July 22, 2024</span>
+                            <i class="fas fa-clock ml-4 mr-2"></i>
+                            <span>Full Day</span>
+                            <i class="fas fa-map-marker-alt ml-4 mr-2"></i>
+                            <span>Pemayangtse Monastery</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Guru Rinpoche Day celebrates the birth of Padmasambhava, the great master who brought Buddhism to Tibet. Special prayers, offerings, and teachings are conducted. This is considered one of the most auspicious days for spiritual practice and receiving blessings.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Ceremony</span>
+                            <button class="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition duration-300 event-learn-more">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 5 -->
+            <div class="event-card mb-8" data-category="festival" data-status="upcoming">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="md:col-span-1">
+                        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Lhabab Duchen" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <div class="md:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-cloud text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Lhabab Duchen</h3>
+                                <p class="text-gray-600">Buddha's Descent from Heaven</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4 text-sm text-gray-600">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>November 6, 2024</span>
+                            <i class="fas fa-clock ml-4 mr-2"></i>
+                            <span>Full Day</span>
+                            <i class="fas fa-map-marker-alt ml-4 mr-2"></i>
+                            <span>All Monasteries</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Lhabab Duchen commemorates Buddha's descent from the Tushita heaven after teaching his mother. This is one of the four great festivals in Tibetan Buddhism. Special prayers and offerings are made, and the merit of all actions is multiplied many times on this day.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">Festival</span>
+                            <button class="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition duration-300">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Calendar -->
+    <section class="py-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Event Calendar</h2>
+            <div class="bg-white rounded-lg p-8">
+                <div class="grid md:grid-cols-7 gap-4 mb-6">
+                    <div class="text-center font-semibold text-gray-600 py-2">Sun</div>
+                    <div class="text-center font-semibold text-gray-600 py-2">Mon</div>
+                    <div class="text-center font-semibold text-gray-600 py-2">Tue</div>
+                    <div class="text-center font-semibold text-gray-600 py-2">Wed</div>
+                    <div class="text-center font-semibold text-gray-600 py-2">Thu</div>
+                    <div class="text-center font-semibold text-gray-600 py-2">Fri</div>
+                    <div class="text-center font-semibold text-gray-600 py-2">Sat</div>
+                </div>
+                <div class="grid md:grid-cols-7 gap-4">
+                    <!-- Calendar days would be dynamically generated here -->
+                    <div class="text-center py-4 text-gray-400">28</div>
+                    <div class="text-center py-4 text-gray-400">29</div>
+                    <div class="text-center py-4 text-gray-400">30</div>
+                    <div class="text-center py-4 text-gray-400">31</div>
+                    <div class="text-center py-4">1</div>
+                    <div class="text-center py-4">2</div>
+                    <div class="text-center py-4">3</div>
+                    <div class="text-center py-4">4</div>
+                    <div class="text-center py-4">5</div>
+                    <div class="text-center py-4">6</div>
+                    <div class="text-center py-4">7</div>
+                    <div class="text-center py-4">8</div>
+                    <div class="text-center py-4">9</div>
+                    <div class="text-center py-4">10</div>
+                    <div class="text-center py-4 bg-red-100 text-red-600 font-semibold rounded-lg">11</div>
+                    <div class="text-center py-4">12</div>
+                    <div class="text-center py-4">13</div>
+                    <div class="text-center py-4">14</div>
+                    <div class="text-center py-4">15</div>
+                    <div class="text-center py-4">16</div>
+                    <div class="text-center py-4">17</div>
+                    <div class="text-center py-4">18</div>
+                    <div class="text-center py-4">19</div>
+                    <div class="text-center py-4">20</div>
+                    <div class="text-center py-4">21</div>
+                    <div class="text-center py-4">22</div>
+                    <div class="text-center py-4">23</div>
+                    <div class="text-center py-4">24</div>
+                    <div class="text-center py-4">25</div>
+                    <div class="text-center py-4">26</div>
+                    <div class="text-center py-4">27</div>
+                    <div class="text-center py-4">28</div>
+                    <div class="text-center py-4">29</div>
+                    <div class="text-center py-4">30</div>
+                    <div class="text-center py-4">31</div>
+                </div>
+                <div class="mt-6 text-center">
+                    <p class="text-sm text-gray-600">Red highlighted dates indicate special events or festivals</p>
+                </div>
+            </div>3d Coverflow Template
+            Elevate your website with the 3D Coverflow template, a modern gallery that turns your images into a stunning visual journey. Built with pure HTML5, CSS3, and JavaScript, it delivers exceptionally smooth, hardware-accelerated 3D animations that captivate your audience and bring your content to life. Perfect for portfolios, product showcases, and photo galleries.
+            
+            It leverages hardware-accelerated CSS3 3D transforms to produce fluid, life-like animations that run smoothly on both desktop and mobile devices. Ideal for photographers, designers, and brands looking to present their visual content in a dynamic and memorable way.
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mountain text-2xl text-red-600 mr-2"></i>
+                        <span class="text-xl font-bold">Sikkim Monasteries</span>
+                    </div>
+                    <p class="text-gray-400">Discover the spiritual heritage of Sikkim through its ancient monasteries.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="monasteries.html" class="text-gray-400 hover:text-white">Explore Monasteries</a></li>
+                        <li><a href="map.html" class="text-gray-400 hover:text-white">Interactive Map</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white">Events & Festivals</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Gangtok, Sikkim</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i>+91 123 456 7890</p>
+                    <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i>info@sikkimmonasteries.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Sikkim Monasteries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

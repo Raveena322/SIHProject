@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monastery Details - Sikkim Monasteries</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-mountain text-3xl text-red-600 mr-3"></i>
+                    <span class="text-2xl font-bold text-gray-800">Sikkim Monasteries</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-red-600">Home</a>
+                    <a href="monasteries.html" class="text-gray-700 hover:text-red-600">Explore Monasteries</a>
+                    <a href="map.html" class="text-gray-700 hover:text-red-600">Map</a>
+                    <a href="events.html" class="text-gray-700 hover:text-red-600">Events</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-red-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                <a href="monasteries.html" class="block py-2 text-gray-700">Explore Monasteries</a>
+                <a href="map.html" class="block py-2 text-gray-700">Map</a>
+                <a href="events.html" class="block py-2 text-gray-700">Events</a>
+                <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Monastery Header -->
+    <section class="monastery-header">
+        <div class="text-center">
+            <h1 id="monastery-title" class="text-4xl md:text-6xl font-bold mb-4">Rumtek Monastery</h1>
+            <p id="monastery-subtitle" class="text-xl md:text-2xl">The largest monastery in Sikkim</p>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="gallery-container">
+                <img id="gallery-main" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Monastery Gallery" class="w-full h-96 object-cover rounded-lg">
+                <button class="gallery-nav prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+                <button class="gallery-nav next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <!-- Thumbnail Gallery -->
+            <div class="flex space-x-2 mt-4 overflow-x-auto">
+                <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Gallery 1" class="w-20 h-20 object-cover rounded cursor-pointer border-2 border-red-600" onclick="setMainImage(this.src)">
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Gallery 2" class="w-20 h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-red-600" onclick="setMainImage(this.src)">
+                <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Gallery 3" class="w-20 h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-red-600" onclick="setMainImage(this.src)">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Gallery 4" class="w-20 h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-red-600" onclick="setMainImage(this.src)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Description and History -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">About This Monastery</h2>
+                    <div class="prose prose-lg">
+                        <p id="monastery-about" class="text-gray-700"></p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Historical Significance</h2>
+                    <ul id="monastery-points" class="space-y-3 list-disc pl-6 text-gray-700"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Virtual Tour</h2>
+            <div class="bg-white rounded-lg p-8 text-center">
+                <div class="w-full h-96 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                    <div class="text-center">
+                        <i class="fas fa-video text-6xl text-gray-400 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-600">360° Virtual Tour</h3>
+                        <p class="text-gray-500 mt-2">Experience the monastery from anywhere in the world</p>
+                        <button class="bg-red-600 text-white px-6 py-3 rounded-full mt-4 hover:bg-red-700 transition duration-300">
+                            <i class="fas fa-play mr-2"></i>Start Virtual Tour
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map and Location -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Location & Map</h2>
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="text-center">
+                            <i class="fas fa-map-marked-alt text-6xl mb-4"></i>
+                            <h3 class="text-2xl font-semibold">Interactive Map</h3>
+                            <p class="text-lg">Click to explore the monastery location</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3 class="font-semibold text-lg">Address</h3>
+                            <p class="text-gray-600">Rumtek Monastery, Gangtok, Sikkim 737135</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-route"></i>
+                        <div>
+                            <h3 class="font-semibold text-lg">Distance from Gangtok</h3>
+                            <p class="text-gray-600">24 km (45 minutes drive)</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-mountain"></i>
+                        <div>
+                            <h3 class="font-semibold text-lg">Altitude</h3>
+                            <p class="text-gray-600">1,500 meters above sea level</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visiting Information -->
+    <section class="py-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Visiting Information</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="info-section">
+                    <i class="fas fa-clock text-3xl text-red-600 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Visiting Hours</h3>
+                    <p class="text-gray-600">6:00 AM - 6:00 PM</p>
+                    <p class="text-sm text-gray-500">Daily</p>
+                </div>
+                <div class="info-section">
+                    <i class="fas fa-ticket-alt text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Entry Fee</h3>
+                    <p class="text-gray-600">₹50 per person</p>
+                    <p class="text-sm text-gray-500">Camera: ₹100</p>
+                </div>
+                <div class="info-section">
+                    <i class="fas fa-parking text-3xl text-green-600 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Parking</h3>
+                    <p class="text-gray-600">Free parking available</p>
+                    <p class="text-sm text-gray-500">Limited spaces</p>
+                </div>
+                <div class="info-section">
+                    <i class="fas fa-utensils text-3xl text-yellow-600 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Nearby Attractions</h3>
+                    <p class="text-gray-600">Gangtok city, Tsomgo Lake</p>
+                    <p class="text-sm text-gray-500">Within 30 km</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mountain text-2xl text-red-600 mr-2"></i>
+                        <span class="text-xl font-bold">Sikkim Monasteries</span>
+                    </div>
+                    <p class="text-gray-400">Discover the spiritual heritage of Sikkim through its ancient monasteries.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="monasteries.html" class="text-gray-400 hover:text-white">Explore Monasteries</a></li>
+                        <li><a href="map.html" class="text-gray-400 hover:text-white">Interactive Map</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white">Events & Festivals</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Gangtok, Sikkim</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i>+91 123 456 7890</p>
+                    <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i>info@sikkimmonasteries.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Sikkim Monasteries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

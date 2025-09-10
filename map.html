@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map - Sikkim Monasteries</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-mountain text-3xl text-red-600 mr-3"></i>
+                    <span class="text-2xl font-bold text-gray-800">Sikkim Monasteries</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-red-600">Home</a>
+                    <a href="monasteries.html" class="text-gray-700 hover:text-red-600">Explore Monasteries</a>
+                    <a href="map.html" class="text-red-600 font-semibold">Map</a>
+                    <a href="events.html" class="text-gray-700 hover:text-red-600">Events</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-red-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                <a href="monasteries.html" class="block py-2 text-gray-700">Explore Monasteries</a>
+                <a href="map.html" class="block py-2 text-red-600 font-semibold">Map</a>
+                <a href="events.html" class="block py-2 text-gray-700">Events</a>
+                <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-20 pb-12 bg-gradient-to-r from-red-600 to-red-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Interactive Map</h1>
+            <p class="text-xl md:text-2xl">Explore monasteries across Sikkim</p>
+        </div>
+    </section>
+
+    <!-- Map Controls -->
+    <section class="py-6 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <div class="flex items-center space-x-4">
+                    <button id="show-all" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition duration-300">
+                        Show All Monasteries
+                    </button>
+                    <button id="filter-gangtok" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300 transition duration-300">
+                        Gangtok Region
+                    </button>
+                    <button id="filter-pelling" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300 transition duration-300">
+                        Pelling Region
+                    </button>
+                    <button id="filter-north" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300 transition duration-300">
+                        Northern Region
+                    </button>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-sm text-gray-600">Zoom:</span>
+                    <button id="zoom-in" class="bg-gray-200 text-gray-700 px-3 py-2 rounded-lg hover:bg-gray-300 transition duration-300">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <button id="zoom-out" class="bg-gray-200 text-gray-700 px-3 py-2 rounded-lg hover:bg-gray-300 transition duration-300">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map -->
+    <section class="py-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="map-container relative">
+                <!-- Map Background -->
+                <div class="w-full h-96 bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 rounded-lg relative overflow-hidden">
+                    <!-- Sikkim Map Placeholder -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-map text-6xl mb-4 opacity-50"></i>
+                            <h3 class="text-2xl font-bold mb-2">Sikkim Map</h3>
+                            <p class="text-lg opacity-75">Click on markers to explore monasteries</p>
+                        </div>
+                    </div>
+
+                    <!-- Monastery Markers -->
+                    <div class="map-marker" style="top: 30%; left: 60%;" data-monastery="rumtek" data-region="gangtok">
+                        <div class="marker-popup">
+                            <h4>Rumtek Monastery</h4>
+                            <p class="text-sm text-gray-600 mb-2">The largest monastery in Sikkim</p>
+                            <button onclick="viewMonastery('rumtek')" class="text-xs">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="map-marker" style="top: 45%; left: 25%;" data-monastery="pemayangtse" data-region="pelling">
+                        <div class="marker-popup">
+                            <h4>Pemayangtse Monastery</h4>
+                            <p class="text-sm text-gray-600 mb-2">Ancient monastery with Himalayan views</p>
+                            <button onclick="viewMonastery('pemayangtse')" class="text-xs">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="map-marker" style="top: 25%; left: 55%;" data-monastery="enchey" data-region="gangtok">
+                        <div class="marker-popup">
+                            <h4>Enchey Monastery</h4>
+                            <p class="text-sm text-gray-600 mb-2">Known for Chaam dance festival</p>
+                            <button onclick="viewMonastery('enchey')" class="text-xs">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="map-marker" style="top: 15%; left: 40%;" data-monastery="lachung" data-region="north">
+                        <div class="marker-popup">
+                            <h4>Lachung Monastery</h4>
+                            <p class="text-sm text-gray-600 mb-2">Serene northern monastery</p>
+                            <button onclick="viewMonastery('lachung')" class="text-xs">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="map-marker" style="top: 20%; left: 35%;" data-monastery="lachen" data-region="north">
+                        <div class="marker-popup">
+                            <h4>Lachen Monastery</h4>
+                            <p class="text-sm text-gray-600 mb-2">Peaceful meditation retreat</p>
+                            <button onclick="viewMonastery('lachen')" class="text-xs">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="map-marker" style="top: 50%; left: 50%;" data-monastery="tashiding" data-region="gangtok">
+                        <div class="marker-popup">
+                            <h4>Tashiding Monastery</h4>
+                            <p class="text-sm text-gray-600 mb-2">Modern architectural marvel</p>
+                            <button onclick="viewMonastery('tashiding')" class="text-xs">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Legend -->
+                <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg">
+                    <h4 class="font-semibold mb-2">Legend</h4>
+                    <div class="space-y-1 text-sm">
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 bg-red-600 rounded-full mr-2"></div>
+                            <span>High Popularity</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 bg-yellow-500 rounded-full mr-2"></div>
+                            <span>Medium Popularity</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 bg-green-500 rounded-full mr-2"></div>
+                            <span>Low Popularity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monastery List -->
+    <section class="py-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Monasteries on Map</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300" data-region="gangtok">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-mountain text-red-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Rumtek Monastery</h3>
+                            <p class="text-sm text-gray-600">Gangtok Region</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-4">The largest monastery in Sikkim, known for its stunning architecture and spiritual significance.</p>
+                    <button onclick="viewMonastery('rumtek')" class="text-red-600 hover:text-red-700 font-semibold text-sm">
+                        View on Map →
+                    </button>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300" data-region="pelling">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-mountain text-yellow-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Pemayangtse Monastery</h3>
+                            <p class="text-sm text-gray-600">Pelling Region</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-4">One of the oldest monasteries in Sikkim, offering panoramic views of the Himalayas.</p>
+                    <button onclick="viewMonastery('pemayangtse')" class="text-red-600 hover:text-red-700 font-semibold text-sm">
+                        View on Map →
+                    </button>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300" data-region="north">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-mountain text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Lachung Monastery</h3>
+                            <p class="text-sm text-gray-600">Northern Region</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-4">A serene monastery in the northern region, surrounded by snow-capped mountains.</p>
+                    <button onclick="viewMonastery('lachung')" class="text-red-600 hover:text-red-700 font-semibold text-sm">
+                        View on Map →
+                    </button>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300" data-region="gangtok">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-mountain text-red-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Enchey Monastery</h3>
+                            <p class="text-sm text-gray-600">Gangtok Region</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-4">A beautiful monastery known for its annual Chaam dance festival.</p>
+                    <button onclick="viewMonastery('enchey')" class="text-red-600 hover:text-red-700 font-semibold text-sm">
+                        View on Map →
+                    </button>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300" data-region="north">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-mountain text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Lachen Monastery</h3>
+                            <p class="text-sm text-gray-600">Northern Region</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-4">A peaceful monastery offering spiritual retreats and meditation sessions.</p>
+                    <button onclick="viewMonastery('lachen')" class="text-red-600 hover:text-red-700 font-semibold text-sm">
+                        View on Map →
+                    </button>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300" data-region="gangtok">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-mountain text-green-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Tashiding Monastery</h3>
+                            <p class="text-sm text-gray-600">Gangtok Region</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-4">A modern monastery known for its unique architecture and peaceful atmosphere.</p>
+                    <button onclick="viewMonastery('tashiding')" class="text-red-600 hover:text-red-700 font-semibold text-sm">
+                        View on Map →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mountain text-2xl text-red-600 mr-2"></i>
+                        <span class="text-xl font-bold">Sikkim Monasteries</span>
+                    </div>
+                    <p class="text-gray-400">Discover the spiritual heritage of Sikkim through its ancient monasteries.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="monasteries.html" class="text-gray-400 hover:text-white">Explore Monasteries</a></li>
+                        <li><a href="map.html" class="text-gray-400 hover:text-white">Interactive Map</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white">Events & Festivals</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Gangtok, Sikkim</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i>+91 123 456 7890</p>
+                    <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i>info@sikkimmonasteries.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Sikkim Monasteries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

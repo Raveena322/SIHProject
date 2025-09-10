@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikkim Monasteries - Discover Sacred Heritage</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-inner">
+            <div class="loader-icon">
+                <svg class="loader-svg" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <!-- Roof tiers -->
+                    <path d="M18 42 L48 26 L78 42"/>
+                    <path d="M24 52 L48 40 L72 52"/>
+                    <!-- Roof edges -->
+                    <path d="M14 42 Q18 46 26 46"/>
+                    <path d="M82 42 Q78 46 70 46"/>
+                    <!-- Pillars/base -->
+                    <path d="M28 46 V70"/>
+                    <path d="M68 46 V70"/>
+                    <path d="M20 70 H76"/>
+                    <!-- Door -->
+                    <path d="M44 70 V58 Q44 54 48 54 Q52 54 52 58 V70"/>
+                    <!-- Finial -->
+                    <path d="M48 26 V20"/>
+                    <circle cx="48" cy="18" r="2"/>
+                </svg>
+            </div>
+            <div class="loader-text">Loading Sikkim Monasteries...</div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-mountain text-3xl text-red-600 mr-3"></i>
+                    <span class="text-2xl font-bold text-gray-800">Sikkim Monasteries</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-red-600 font-semibold">Home</a>
+                    <a href="monasteries.html" class="text-gray-700 hover:text-red-600">Explore Monasteries</a>
+                    <a href="map.html" class="text-gray-700 hover:text-red-600">Map</a>
+                    <a href="events.html" class="text-gray-700 hover:text-red-600">Events</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-red-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-red-600 font-semibold">Home</a>
+                <a href="monasteries.html" class="block py-2 text-gray-700">Explore Monasteries</a>
+                <a href="map.html" class="block py-2 text-gray-700">Map</a>
+                <a href="events.html" class="block py-2 text-gray-700">Events</a>
+                <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3D Coverflow Gallery (First section) -->
+    <section id="visual-journey" class="pt-24 pb-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800 mb-3">Sikkim Visual Journey</h2>
+                <p class="text-lg text-gray-600">Immerse in a 3D gallery of Sikkim's monasteries</p>
+            </div>
+            <div class="coverflow" id="coverflow" data-center-index="2">
+                <div class="coverflow-caption text-center">
+                    <h3 id="coverflow-title" class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Sikkim Monasteries</h3>
+                    <p id="coverflow-subtitle" class="text-gray-600">A visual journey through sacred heritage</p>
+                </div>
+                <button class="coverflow-btn prev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="coverflow-track"></div>
+                <button class="coverflow-btn next" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <button id="coverflow-toggle" class="coverflow-centerplay" aria-label="Toggle autoplay">
+                    <i class="fas fa-play"></i>
+                </button>
+                <div class="coverflow-dots" id="coverflow-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div id="hero-parallax" class="relative z-10 text-center text-white px-4 hero-parallax">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 gradient-text">Discover Sacred Heritage</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Explore the ancient monasteries of Sikkim, where spirituality meets breathtaking mountain landscapes</p>
+            <div class="flex flex-col sm:flex-row gap-4 items-center justify-center mb-8 cta-glow">
+                <a href="monasteries.html" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 inline-flex items-center gap-3">
+                    <i class="fas fa-compass"></i>
+                    Explore Monasteries
+                </a>
+                <a href="map.html" class="bg-white/10 hover:bg-white/20 backdrop-blur text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 inline-flex items-center gap-3 border border-white/30">
+                    <i class="fas fa-map-marked-alt"></i>
+                    View Interactive Map
+                </a>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-3 hero-badges mb-10">
+                <a href="events.html" class="badge">
+                    <i class="fas fa-fan"></i>
+                    Cultural Festivals
+                </a>
+                <a href="monasteries.html" class="badge">
+                    <i class="fas fa-landmark"></i>
+                    Heritage Sites
+                </a>
+                <a href="contact.html" class="badge">
+                    <i class="fas fa-user-friends"></i>
+                    Local Guides
+                </a>
+            </div>
+            <a href="#visual-journey" class="scroll-cue inline-flex flex-col items-center text-white/80 hover:text-white transition">
+                <span class="text-sm mb-1">Scroll to explore</span>
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+        <div class="hero-wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path fill="white" fill-opacity="1" d="M0,64L48,58.7C96,53,192,43,288,37.3C384,32,480,32,576,37.3C672,43,768,53,864,69.3C960,85,1056,107,1152,106.7C1248,107,1344,85,1392,74.7L1440,64L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path></svg>
+        </div>
+    </section>
+
+    <!-- Discover Monasteries Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Discover Monasteries</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Immerse yourself in the spiritual beauty of Sikkim's ancient monasteries</p>
+            </div>
+            <div class="feature-list-wrapper mx-auto max-w-4xl">
+                <ul class="feature-list divide-y divide-gray-200">
+                    <li class="feature-item" data-key="spiritual">
+                        <button class="feature-btn">
+                            <span class="icon bg-red-100 text-red-600"><i class="fas fa-pray"></i></span>
+                            <div class="text-left">
+                                <h3 class="title">Spiritual Journey</h3>
+                                <p class="desc">Experience the peace and tranquility of ancient Buddhist traditions</p>
+                            </div>
+                            <i class="fas fa-chevron-right arrow"></i>
+                        </button>
+                    </li>
+                    <li class="feature-item" data-key="mountain">
+                        <button class="feature-btn">
+                            <span class="icon bg-yellow-100 text-yellow-600"><i class="fas fa-mountain"></i></span>
+                            <div class="text-left">
+                                <h3 class="title">Mountain Views</h3>
+                                <p class="desc">Witness breathtaking Himalayan landscapes from sacred heights</p>
+                            </div>
+                            <i class="fas fa-chevron-right arrow"></i>
+                        </button>
+                    </li>
+                    <li class="feature-item" data-key="history">
+                        <button class="feature-btn">
+                            <span class="icon bg-blue-100 text-blue-600"><i class="fas fa-history"></i></span>
+                            <div class="text-left">
+                                <h3 class="title">Rich History</h3>
+                                <p class="desc">Discover centuries-old traditions and cultural heritage</p>
+                            </div>
+                            <i class="fas fa-chevron-right arrow"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Feature Modal -->
+        <div id="feature-modal" class="feature-modal hidden">
+            <div class="feature-modal-backdrop"></div>
+            <div class="feature-modal-dialog">
+                <button class="feature-modal-close" aria-label="Close"><i class="fas fa-times"></i></button>
+                <div class="feature-modal-media">
+                    <img id="feature-image" src="" alt="Feature image" loading="lazy">
+                </div>
+                <div class="feature-modal-content">
+                    <h3 id="feature-title" class="text-2xl font-bold mb-2"></h3>
+                    <p id="feature-desc" class="text-gray-600 mb-4"></p>
+                    <ul id="feature-facts" class="list-disc pl-5 space-y-2 text-gray-700"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan Your Visit Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Plan Your Visit</h2>
+                <p class="text-xl text-gray-600">Everything you need to know for your monastery tour</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-calendar-alt text-3xl text-red-600 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Best Time</h3>
+                    <p class="text-gray-600">March to May and September to November for clear mountain views</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-route text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Transportation</h3>
+                    <p class="text-gray-600">Private vehicles and shared taxis available from Gangtok</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-camera text-3xl text-green-600 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Photography</h3>
+                    <p class="text-gray-600">Capture stunning views and architectural details</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-heart text-3xl text-pink-600 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Respect</h3>
+                    <p class="text-gray-600">Dress modestly and maintain silence in prayer halls</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Festivals Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-3">Upcoming Festivals</h2>
+                <p class="text-xl text-gray-600 mb-4">Experience the vibrant cultural celebrations</p>
+                <div class="mx-auto h-1 w-24 rounded-full bg-gradient-to-r from-red-500 via-yellow-400 to-blue-500"></div>
+            </div>
+            <div class="festival-grid grid md:grid-cols-3 gap-8">
+                <!-- Losar -->
+                <article class="festival-card">
+                    <div class="festival-accent accent-red"></div>
+                    <div class="festival-card-inner">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="icon-circle bg-red-100 text-red-600">
+                                <i class="fas fa-fire-alt"></i>
+                            </div>
+                            <span class="date-badge bg-red-600">Feb 10–12, 2024</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Losar Festival</h3>
+                        <p class="text-gray-600 mb-6">Tibetan New Year celebrated with vibrant cham dances, music, and prayers.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500 flex items-center gap-2"><i class="fas fa-map-marker-alt text-red-500"></i> Sikkim Monasteries</span>
+                            <a href="events.html" class="text-red-600 hover:text-red-700 font-semibold inline-flex items-center gap-2">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Saga Dawa -->
+                <article class="festival-card">
+                    <div class="festival-accent accent-gold"></div>
+                    <div class="festival-card-inner">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="icon-circle bg-yellow-100 text-yellow-600">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <span class="date-badge bg-yellow-500">May 15, 2024</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Saga Dawa</h3>
+                        <p class="text-gray-600 mb-6">Honoring Buddha’s birth, enlightenment, and parinirvana with processions.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500 flex items-center gap-2"><i class="fas fa-route text-yellow-500"></i> Statewide</span>
+                            <a href="events.html" class="text-yellow-600 hover:text-yellow-700 font-semibold inline-flex items-center gap-2">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Tsechu -->
+                <article class="festival-card">
+                    <div class="festival-accent accent-blue"></div>
+                    <div class="festival-card-inner">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="icon-circle bg-blue-100 text-blue-600">
+                                <i class="fas fa-theater-masks"></i>
+                            </div>
+                            <span class="date-badge bg-blue-600">Oct 8–10, 2024</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Tsechu Festival</h3>
+                        <p class="text-gray-600 mb-6">Colorful masked dances and sacred performances at major monasteries.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500 flex items-center gap-2"><i class="fas fa-landmark text-blue-500"></i> Major Monasteries</span>
+                            <a href="events.html" class="text-blue-600 hover:text-blue-700 font-semibold inline-flex items-center gap-2">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mountain text-2xl text-red-600 mr-2"></i>
+                        <span class="text-xl font-bold">Sikkim Monasteries</span>
+                    </div>
+                    <p class="text-gray-400">Discover the spiritual heritage of Sikkim through its ancient monasteries.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="monasteries.html" class="text-gray-400 hover:text-white">Explore Monasteries</a></li>
+                        <li><a href="map.html" class="text-gray-400 hover:text-white">Interactive Map</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white">Events & Festivals</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Gangtok, Sikkim</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i>+91 123 456 7890</p>
+                    <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i>info@sikkimmonasteries.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Sikkim Monasteries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Floating Button + Panel (Home page) -->
+    <button id="chat-fab" class="chat-fab" aria-label="Open chat">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+    <div id="chat-panel" class="chat-panel hidden" role="dialog" aria-modal="true" aria-labelledby="chat-title">
+        <div class="chat-header">
+            <div class="title-wrap">
+                <i class="fas fa-robot"></i>
+                <h3 id="chat-title">Sikkim Guide</h3>
+            </div>
+            <button id="chat-close" class="chat-close" aria-label="Close chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="msg bot">Hi! Ask me about monasteries, events, or how to plan your visit.</div>
+        </div>
+        <form id="chat-form" class="chat-input" action="#">
+            <input id="chat-text" type="text" placeholder="Type your message..." aria-label="Type your message">
+            <button type="submit" class="send"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+
+    <!-- Voice Guide Floating Button + Panel (Home page) -->
+    <button id="voice-fab" class="voice-fab" aria-label="Open audio guide">
+        <i class="fas fa-microphone"></i>
+    </button>
+    <div id="voice-panel" class="voice-panel hidden" role="dialog" aria-modal="true" aria-labelledby="voice-title">
+        <div class="voice-header">
+            <div class="title-wrap">
+                <i class="fas fa-headphones"></i>
+                <h3 id="voice-title">Audio Guide</h3>
+            </div>
+            <button id="voice-close" class="voice-close" aria-label="Close guide"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="voice-body">
+            <p class="text-sm text-gray-700">This audio guide will narrate highlights of nearby monasteries. You can attach GPS later.</p>
+            <div class="voice-controls">
+                <button id="voice-play" class="voice-btn primary"><i class="fas fa-play"></i> Play</button>
+                <button id="voice-pause" class="voice-btn"><i class="fas fa-pause"></i> Pause</button>
+                <button id="voice-stop" class="voice-btn"><i class="fas fa-stop"></i> Stop</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>

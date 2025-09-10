@@ -1,0 +1,390 @@
+{
+  "Amba Mamring Monastery": {
+    "about": "Located in the tranquil environment of East Sikkim, Amba Mamring Monastery is a historically significant institution that serves as a cornerstone of spiritual life for the local devotee community. It plays a crucial role in the preservation and continuation of regional Buddhist practices and traditions that might otherwise be lost.",
+    "points": ["Key spiritual and community center for the Mamring area locals", "Dedicated to preserving unique regional Buddhist practices and oral traditions", "Contributes significantly to the area's peaceful and spiritual atmosphere", "A quiet sanctuary for meditation and prayer away from tourist hubs"]
+  },
+  "Bakcham Monastery": {
+    "about": "A smaller yet vital monastery in a rural part of East Sikkim, Bakcham Monastery functions as an essential hub for daily prayer, meditation, and religious instruction for the surrounding villages. It is a place where the community gathers for spiritual guidance and to perform important life-cycle rituals.",
+    "points": ["Central place for Buddhist teachings, rituals, and ceremonies", "Fosters a strong sense of community spirit among its followers", "Plays a key role in the continuation of Buddhist traditions for younger generations", "Offers a serene environment for personal reflection and meditation"]
+  },
+  "Bongyong Ani Gonpa": {
+    "about": "Bongyong Ani Gonpa is a respected nunnery in East Sikkim, established to provide a dedicated space for female monastics to pursue spiritual study and practice. It stands as a testament to the growing inclusion of women in monastic life and education within the region.",
+    "points": ["A dedicated sanctuary and educational center for female monastics (nuns)", "Actively promotes gender inclusion within Sikkimese monastic traditions", "Sustains and nurtures the spiritual practice and well-being of women", "An important institution for preserving the lineage of female practitioners"]
+  },
+  "Burtuk Ugen Pemacholing Monastery": {
+    "about": "Situated near Gangtok in East Sikkim, the Burtuk Ugen Pemacholing Monastery is known for its serene environs and beautiful, traditional Sikkimese architecture. Its peaceful setting makes it a preferred retreat for those seeking to engage in deep meditation and prayer.",
+    "points": ["An ideal spiritual retreat for meditation and contemplation", "Acts as a pilgrimage hub for devotees from Gangtok and surrounding areas", "Features classic traditional Sikkimese monastic architecture", "Hosts regular prayer ceremonies that are central to the local community's faith"]
+  },
+  "Choten Monastery": {
+    "about": "Also widely known as Chorten Gompa, this monastery near Gangtok is architecturally and spiritually centered around a large, prominent stupa (Chorten). This stupa is a major landmark and a focal point for worship, circumambulation, and local religious ceremonies.",
+    "points": ["The prominent stupa serves as a major spiritual landmark and object of worship", "A center for devotional practices like circumambulation (kora) and meditation", "A focal point for local Buddhist ceremonies and religious festivals", "Located conveniently near Gangtok, making it accessible for both devotees and visitors"]
+  },
+  "Dichen Choling Monastery": {
+    "about": "A quiet monastery in East Sikkim, Dichen Choling is dedicated to the preservation and dissemination of core Buddhist teachings. It functions as a vital center for monastic education, ensuring that the ancient traditions and philosophies are passed down through rigorous study and practice.",
+    "points": ["A key center for religious education and rigorous monastic practice", "Dedicated to the preservation of ancient Buddhist texts, rituals, and traditions", "Fosters a strong spiritual community among its resident monks and lay followers", "Known for its peaceful atmosphere conducive to study and contemplation"]
+  },
+  "Dolepchen Boudha Sanskrit Monastery": {
+    "about": "This unique institution in East Sikkim bridges the study of Mahayana Buddhism with classical Sanskrit traditions. It serves as both an academic and spiritual center, fostering a scholarly environment where monks and students can delve into the linguistic and philosophical roots that connect these two ancient knowledge systems.",
+    "points": ["Promotes the preservation and study of the Sanskrit language in a monastic context", "Uniquely bridges Buddhist philosophy with classical Sanskrit literary traditions", "Functions as both an academic institution and a spiritual center for practice", "Contributes to the scholarly understanding of Buddhist scriptural heritage"]
+  },
+  "Duchi Gyalton Monastery": {
+    "about": "An ancient and venerable monastery in East Sikkim, Duchi Gyalton is respected for its long spiritual lineage and historical significance. It stands as a beacon of ancient spiritual wisdom, having preserved age-old practices and rituals that have been passed down through many generations of masters.",
+    "points": ["Possesses a significant and long-standing historical lineage", "A repository for age-old practices, rituals, and tantric traditions", "Stands as a beacon of ancient spiritual wisdom and local history", "Revered by the local community for its deep-rooted spiritual power"]
+  },
+  "Enchey Monastery": {
+    "about": "Perched on a hilltop above Gangtok, the Enchey Monastery, meaning 'Solitary Temple,' was founded in 1909 and belongs to the Nyingma order. It is believed to have been blessed by Lama Druptob Karpo, a tantric master known for his ability to fly. It's one of Gangtok's most important religious sites.",
+    "points": ["A major pilgrimage site for followers of the Nyingma lineage", "Hosts the vibrant annual 'Chaam' (masked dance) festival around January", "Believed to be protected by guardian deities of Khangchendzonga and Yabdean", "Offers panoramic views of Gangtok and the surrounding Himalayan peaks"]
+  },
+  "Kagon Tshechhogling Monastery": {
+    "about": "Located in East Sikkim, Kagon Tshechhogling Monastery is a vibrant community center that plays a pivotal role in hosting local ceremonies, festivals, and rituals. It serves as a gathering place that helps maintain and reinforce the traditional cultural and religious values of the surrounding area.",
+    "points": ["A central hub for local religious rituals and community activities", "Hosts important community festivals, strengthening social and spiritual bonds", "Plays a crucial role in maintaining traditional cultural and moral values", "Serves the day-to-day spiritual needs of the local population"]
+  },
+  "Kathog Dorjeden Monastery": {
+    "about": "One of the oldest and most significant monasteries in Sikkim, this institution is a replica of the original Kathog Monastery in Tibet, one of the six principal monasteries of the Nyingma school. As such, it holds immense spiritual and historical value, acting as a vital center for the preservation of the Kathog tradition.",
+    "points": ["Holds immense spiritual and historical value as a seat of the Kathog lineage", "Dedicated to the preservation of the specific teachings and practices of the Kathog tradition", "A living testament to the deep cultural and religious ties between Sikkim and Tibet", "An important center for advanced Nyingma practice and philosophy"]
+  },
+  "Khatek Pema Choling Monastery": {
+    "about": "Nestled in a secluded part of East Sikkim, Khatek Pema Choling Monastery is a refuge for those seeking to engage in deep spiritual practice. Its tranquil environment is intentionally maintained to foster an atmosphere conducive to meditation, study, and introspection away from worldly distractions.",
+    "points": ["A primary center for intensive meditation and spiritual retreats", "Contributes profoundly to the religious life of the local community", "A secluded spiritual refuge offering peace and tranquility", "Upholds a rigorous schedule of prayer and practice for resident monks"]
+  },
+  "Lingdok Tsangkhar Monastery": {
+    "about": "Serving the Lingdok region of East Sikkim, this monastery is a cornerstone of the local community. It provides essential religious education, serves as a venue for daily prayers and major community events, and maintains a strong, supportive link with the local population.",
+    "points": ["A key spiritual center for the residents of the Lingdok region", "Plays a crucial role in the religious education of young monks and local children", "Maintains a strong and interactive link with the local lay community", "Hosts all major religious ceremonies and festivals for the area"]
+  },
+  "Lingdum (Zurmang) Monastery": {
+    "about": "Also known as Ranka Monastery, Lingdum is a large, magnificent monastery located near Gangtok. It follows the Zurmang Kagyud lineage of Tibetan Buddhism and serves as a major seat and study center for this tradition. Its grand architecture and sprawling complex make it a visually stunning and spiritually vibrant place.",
+    "points": ["A major monastic seat and teaching center for the Zurmang Kagyud lineage", "Features grand, elaborate architecture with intricate murals and statues", "An important center for higher Buddhist philosophical studies", "Attracts a large number of followers, scholars, and tourists alike"]
+  },
+  "Linkoed Monastery": {
+    "about": "A rural monastery in East Sikkim, Linkoed Monastery is the spiritual heart for several surrounding villages. It is dedicated to upholding the traditional values and religious practices that form the backbone of the community, providing a space for worship, festivals, and social gatherings.",
+    "points": ["A vital spiritual center serving the needs of remote rural villages", "Dedicated to upholding traditional Buddhist values and local customs", "Fosters a sense of community and shared spiritual identity", "The main venue for religious ceremonies and cultural events in its locality"]
+  },
+  "Martam Namdzong": {
+    "about": "Located in the Martam region of East Sikkim, this monastery is a focal point for local festivals and religious celebrations. It is instrumental in preserving unique practices and rituals that are specific to the area, making it a key spiritual and cultural hub for the local populace.",
+    "points": ["A key spiritual center for the people of the Martam region", "Preserves unique local Buddhist practices and traditions", "A vibrant hub for local festivals, especially during the Buddhist calendar events", "Central to the social and religious fabric of the community"]
+  },
+  "Martam Tsangkhar Monastery": {
+    "about": "Complementing the religious landscape of the Martam area, this monastery supports the spiritual well-being of the region by hosting ceremonies and providing a space for daily worship. It works in tandem with other local institutions to strengthen community bonds through shared faith.",
+    "points": ["Supports the regional spiritual well-being of the Martam area", "Holds regular prayer services and ceremonies throughout the year", "Strengthens community bonds by providing a common place for worship", "Plays an integral role in the area's network of religious institutions"]
+  },
+  "Old Rumtek Monastery": {
+    "about": "Built in the mid-18th century, the Old Rumtek Monastery was the original seat of the Karma Kagyu lineage in Sikkim, long before the construction of the new Dharma Chakra Centre. Though smaller, it holds immense historic and spiritual value as a testament to the early propagation of the lineage in the region.",
+    "points": ["Possesses deep historic and spiritual value as the original Kagyu seat", "The original seat of the Karmapa in Sikkim, preceding the new center", "Represents the early Buddhist heritage of the Karma Kagyu school in Sikkim", "A more tranquil and historic alternative to the bustling new monastery"]
+  },
+  "Pabyuk Monastery": {
+    "about": "Pabyuk Monastery is a secluded institution in East Sikkim where a traditional monastic lifestyle is strictly maintained. Its peaceful environment and focus on disciplined practice make it a crucial center for the religious life of the local community, offering a living example of the monastic ideal.",
+    "points": ["Crucial for the continuation of religious life in its local area", "Maintains a disciplined, traditional monastic lifestyle", "Offers a peaceful and conducive environment for spiritual practice", "A repository of local religious customs and traditions"]
+  },
+  "Pandam Monastery": {
+    "about": "Serving as the spiritual hub for the Pandam region in East Sikkim, this monastery is dedicated to preserving the local Buddhist customs and traditions that define the area's cultural identity. It is a vital institution that anchors the spiritual fabric of the entire region.",
+    "points": ["A focal point for the spiritual life of the Pandam community", "Dedicated to the preservation of local Buddhist customs and cultural traditions", "Vital to the region's spiritual fabric and cultural identity", "Hosts major religious events and provides guidance to the local populace"]
+  },
+  "Pathing Matsang Monastery": {
+    "about": "A smaller monastery in the Pathing area of East Sikkim, this institution serves the essential functions of worship and religious instruction for the local rural community. It plays a key role in ensuring the continuity of traditional practices at a grassroots level.",
+    "points": ["A dedicated place for daily worship and religious instruction", "Ensures the continuation of rural Buddhist practices and beliefs", "Key to the everyday religious life of the local villagers", "A center for community gathering during religious occasions"]
+  },
+  "Radong Tensung Monastery": {
+    "about": "An old and respected monastery in East Sikkim, Radong Tensung is particularly valued for its rich historical lineage and its role as a repository for ancient texts. The monastery has meticulously preserved important scriptures and practices, making it a site of great historical and spiritual value.",
+    "points": ["Possesses a rich and well-documented historical lineage", "A repository that preserves rare and ancient Buddhist texts and practices", "Holds significant historical and spiritual value for scholars and practitioners", "Maintains a tradition of rigorous study and preservation of knowledge"]
+  },
+  "Raloong Monastery": {
+    "about": "Situated in East Sikkim, Raloong Monastery is a part of the local religious landscape that actively supports community worship and monastic education. It provides a structured environment for monks to study and practice, while also serving the spiritual needs of the surrounding lay community.",
+    "points": ["Actively supports public worship and community prayer sessions", "Provides a formal setting for monastic education and training", "An integral part of the local religious and social landscape", "Helps in the preservation of Buddhist philosophy and rituals"]
+  },
+  "Ray Mindu Katenling Monastery": {
+    "about": "Serving the Ray region of East Sikkim, this monastery is a vital spiritual center for the surrounding villages. It is particularly known for hosting key rituals and ceremonies that are central to the community's calendar, thereby shaping the spiritual identity of the area.",
+    "points": ["A vital spiritual center for several surrounding villages", "Hosts key annual ceremonies and rituals that define the local culture", "Plays a significant role in shaping the spiritual identity of the community", "A gathering place for villagers to celebrate their shared heritage"]
+  },
+  "Rinak Monastery": {
+    "about": "The old monastery in Rinak, East Sikkim, is revered as a beacon of Buddhist teachings and a repository of ancient wisdom. With its long history, it holds significant spiritual authority and is looked upon as a guardian of the region's profound religious traditions.",
+    "points": ["Holds deep historical and spiritual significance for the region", "Acts as a beacon of Buddhist teachings for the local population", "A repository of ancient traditions, folklore, and religious knowledge", "Venerated for its powerful spiritual ambiance and heritage"]
+  },
+  "Rumtek Dharma Chakra Centre": {
+    "about": "The largest monastery in Sikkim, Rumtek is the seat of the Gyalwa Karmapa, the head of the Karma Kagyu school of Tibetan Buddhism. Modeled after the Tsurphu Monastery in Tibet, it is a major global center for Kagyu teachings and houses some of the most precious relics and scriptures.",
+    "points": ["The global headquarters for the Karma Kagyu (Karmapa) lineage", "One of the most significant Tibetan Buddhist monasteries outside Tibet", "Hosts major festivals like the Vajrakilaya Drupchen and the Karmapa's birthday", "Houses a monastic college (Shedra) and a retreat center"]
+  },
+  "Samdong Mintokgang Monastery": {
+    "about": "A peaceful hub in the Samdong area of East Sikkim, this monastery provides a welcoming space for meditation, prayer, and community gatherings. It plays a key role in reinforcing the social and spiritual bonds among the local population through shared religious activities.",
+    "points": ["A local religious hub for the Samdong community", "Provides a serene and accessible space for meditation and prayer", "Reinforces social and spiritual bonds through community gatherings", "Hosts regular prayer sessions and local religious events"]
+  },
+  "Sang Monastery": {
+    "about": "A vital center in the Sang region of East Sikkim, this monastery is crucial to the preservation of local rituals and cultural practices. It serves as the primary place of worship for the community and ensures that the unique spiritual heritage of the area is maintained and passed on.",
+    "points": ["A vital worship center for the residents of the Sang area", "Dedicated to the preservation of specific local rituals and cultural practices", "Crucial to the cultural and spiritual life of the community", "A focal point for all major religious and social activities"]
+  },
+  "Sang-Ngor Monastery (Sa-Ngor)": {
+    "about": "This monastery is a branch of the Ngor tradition, a sub-school of the Sakya order of Tibetan Buddhism. It is a rare and important Sakya center in Sikkim, a region predominantly influenced by the Nyingma and Kagyu schools, making it a unique repository of the Sakya lineage's teachings.",
+    "points": ["A unique monastery representing the Sakya school in Sikkim", "Dedicated to preserving the specific teachings of the Ngor lineage", "An important lineage center for followers of the Sakya tradition", "Offers a different perspective on Buddhist philosophy and practice in the region"]
+  },
+  "Simig Monastery": {
+    "about": "Located in a rural setting in East Sikkim, Simig Monastery is a traditional institution that plays a crucial role in maintaining the continuity of Buddhist practices at the village level. It fosters a strong community spirit by being the center for all religious and cultural activities.",
+    "points": ["Crucial to the daily religious life of the local community", "Dedicated to maintaining traditional Buddhist practices and rituals", "Fosters a strong sense of community spirit and cooperation", "The heart of the village's cultural and religious identity"]
+  },
+  "Singtam Monastery": {
+    "about": "Situated near the bustling town of Singtam in East Sikkim, this monastery functions as the main religious and cultural hub for the town's residents. It hosts major festivals and events that are central to the local identity, providing a spiritual anchor amidst a commercial center.",
+    "points": ["The main religious hub for the town of Singtam and its environs", "Hosts vibrant festivals that attract large crowds from the community", "Central to the cultural and spiritual identity of the local population", "Provides a place of peace and worship in a busy urban area"]
+  },
+  "Sumon Thubten Gatsalling Monastery": {
+    "about": "Serving the Sumon area in East Sikkim, this monastery is a center for spiritual learning and disciplined practice. It contributes to the region's monastic heritage by providing a structured environment for the training of new monks, ensuring the continuation of the monastic tradition.",
+    "points": ["A dedicated center for spiritual learning and monastic training", "Contributes significantly to the region's overall monastic heritage", "Focuses on the education and discipline of new and young monks", "A place for rigorous study of Buddhist philosophy and practice"]
+  },
+  "Taglung Domsumling Monastery": {
+    "about": "An ancient monastery in East Sikkim, Taglung Domsumling is highly valued for its deep historical roots and for preserving the lineage of its founding lamas. It is a site of great local reverence, embodying the history and spiritual evolution of its specific community.",
+    "points": ["Highly valued for its significant historical lineage and antiquity", "Dedicated to preserving the specific lineage of its founding lamas", "Has deep historical roots within the local community and landscape", "A site of pilgrimage for those connected to its specific tradition"]
+  },
+  "Taktse (Taktse Ani) Gonpa": {
+    "about": "A nunnery located near Taktse in East Sikkim, this Gonpa is a crucial space that supports the study, practice, and well-being of female monastics. It plays an empowering role in the community, providing women with the opportunity to dedicate their lives to spiritual pursuits in a supportive environment.",
+    "points": ["A crucial and supportive space for female monastics (nuns)", "Supports the spiritual and educational development of women", "Empowers women on their spiritual journeys through dedicated resources", "Contributes to the diversity and inclusivity of Sikkim's monastic landscape"]
+  },
+  "Thumon Monastery": {
+    "about": "A tranquil and secluded monastery in East Sikkim, Thumon provides an ideal refuge for intensive meditation and religious study. Its remote location and peaceful ambiance are intentionally cultivated to support practitioners in their quest for spiritual insight and knowledge.",
+    "points": ["A perfect refuge for intensive meditation and silent retreats", "Its secluded and peaceful environment is conducive to deep practice", "A center for focused religious study and philosophical inquiry", "Offers a sanctuary from the distractions of everyday life"]
+  },
+  "Tingkye Gonjang Monastery": {
+    "about": "A smaller monastery serving the Tingkye area of East Sikkim, this institution is the heart of local activities and traditions. It maintains a strong community presence by being accessible and central to the daily lives of the people it serves.",
+    "points": ["A center for local religious activities and community events", "Dedicated to the preservation of local traditions and customs", "Maintains a strong and visible presence within the community", "The primary venue for prayers, rituals, and local festivals"]
+  },
+  "Tsangek Monastery": {
+    "about": "A significant religious site in East Sikkim, Tsangek Monastery plays a daily role in the spiritual life of the community. It is known for its regular schedule of prayers, pujas, and ceremonies that provide a constant spiritual rhythm for the local residents.",
+    "points": ["A significant and active site in its local region", "Maintains a consistent schedule of regular prayers and ceremonies", "Plays a daily role in the spiritual lives of the local people", "A place of constant devotion and religious activity"]
+  },
+  "Tsuklakhang (Tsulakhang) Monastery / Royal Chapel": {
+    "about": "Located within the former royal palace grounds in Gangtok, Tsuklakhang was the primary chapel and place of assembly for the Chogyals (kings) of Sikkim. It holds immense cultural and historical importance, housing an extensive collection of Buddhist scriptures and serving as the venue for royal ceremonies like coronations and weddings.",
+    "points": ["Of immense cultural and historical importance to Sikkim", "Served as the official royal chapel of the former Sikkimese monarchy", "Hosts important festivals like Pang Lhabsol and Kagyed", "Houses a vast collection of valuable Buddhist scriptures and texts"]
+  },
+  "Karthok Monastery": {
+    "about": "An older and highly revered monastery in North Sikkim, Karthok is a significant cultural hub. It plays a vital role in preserving ancient Buddhist practices and serves as the main spiritual center for its region, guiding the community in religious and social matters.",
+    "points": ["A vital spiritual center with a long history in North Sikkim", "Dedicated to preserving ancient practices, rituals, and teachings", "A cultural hub for the region, hosting major festivals and events", "Highly revered by the local community for its spiritual significance"]
+  },
+  "Rhenock Monastery": {
+    "about": "Serving the Rhenock region of East Sikkim, this monastery is known for its tranquil atmosphere, which fosters spiritual learning and personal growth. It is an important local religious site where devotees can engage in prayer and receive teachings in a peaceful setting.",
+    "points": ["An important religious site for the Rhenock sub-division", "Fosters spiritual growth through teachings and a peaceful environment", "Known for its particularly tranquil and contemplative atmosphere", "A center for local community worship and religious education"]
+  },
+  "Simik Monastery": {
+    "about": "Located in North Sikkim, Simik Monastery is a spiritual center for the local population and a destination for pilgrims seeking a peaceful retreat. Its remote location enhances its appeal as a place for quiet contemplation and devotion away from the hustle of modern life.",
+    "points": ["An important local spiritual center in North Sikkim", "A pilgrimage site for those in the surrounding areas", "Offers a peaceful and remote retreat for meditation and prayer", "Maintains the religious traditions of its specific locality"]
+  },
+  "Barphog Monastery": {
+    "about": "Situated at a high altitude in a secluded part of North Sikkim, Barphog Monastery is ideally suited for deep, solitary retreats. Its remote and tranquil location supports a monastic lifestyle focused on intensive meditation and practice, away from all worldly distractions.",
+    "points": ["An important center for deep meditation and long-term retreats", "Upholds a solitary and austere monastic lifestyle", "Its remote and high-altitude location provides profound tranquility", "A place for advanced practitioners to deepen their spiritual realization"]
+  },
+  "Gor Monastery": {
+    "about": "A smaller monastery in North Sikkim, Gor Monastery is dedicated to serving the spiritual needs of the local villagers. It acts as a central place for community prayer, religious activities, and cultural gatherings, thereby strengthening the unique cultural identity of the village.",
+    "points": ["Primarily serves the spiritual needs of local villagers", "A center for community prayer and religious activities", "Strengthens the cultural identity of its remote community", "The heart of the village's social and religious life"]
+  },
+  "Hee Gyathang Monastery": {
+    "about": "Located in Hee Gyathang, North Sikkim, this monastery is noted for its beautiful traditional architecture. It is a key spiritual center for the area, playing a crucial role in preserving the local traditions, culture, and religious heritage of the community.",
+    "points": ["A key local spiritual center in the Dzongu region", "Dedicated to preserving local traditions and Lepcha-Bhutia culture", "Features beautiful and well-preserved traditional Sikkimese architecture", "Hosts important local festivals and religious ceremonies"]
+  },
+  "Kabi Monastery": {
+    "about": "A site of immense historical importance in North Sikkim, Kabi Monastery commemorates the spot where the 'Blood Brotherhood' treaty was signed in the 13th century between the Lepcha chief Thekong Tek and the Bhutia chief Khye Bumsa. This treaty symbolized a pact of unity and coexistence between the two communities.",
+    "points": ["Of immense historical value, marking the 'Blood Brotherhood' treaty", "A powerful symbol of unity and peaceful coexistence in Sikkimese history", "Considered one of Sikkim's oldest and most historically significant monasteries", "A pilgrimage site for those interested in the origins of the Sikkimese kingdom"]
+  },
+  "Labrang Monastery": {
+    "about": "An ancient Nyingma monastery located near Phodong in North Sikkim, Labrang Monastery is a symbol of the deep-rooted Nyingma lineage in the region. Its name means 'the Lama's dwelling,' and it is revered for its historical significance and unique architectural style, which differs from many other gompas in Sikkim.",
+    "points": ["A powerful symbol of the Nyingma lineage in North Sikkim", "Historically significant and one of the oldest monastic institutions", "A revered spiritual center with a rich collection of murals and scriptures", "Features a unique architectural design and serene, wooded surroundings"]
+  },
+  "Lachen Monastery": {
+    "about": "Also known as Ngodub Choling, Lachen Monastery is the prominent religious and cultural hub for the Lachenpa community of North Sikkim. Founded in 1858, it is a starting point for pilgrims heading to the sacred Guru Dongmar Lake. It belongs to the Nyingma school.",
+    "points": ["The main religious and cultural hub for the Lachenpa community", "Serves as a starting point for the pilgrimage to Guru Dongmar Lake", "Hosts important local festivals and the annual masked dance", "Crucial to the unique social and religious governance system of Lachen (Dzumsa)"]
+  },
+  "Lachen Thangu Monastery": {
+    "about": "Situated in the high-altitude valley of Thangu in North Sikkim, this monastery serves as a vital stop for pilgrims traveling to Guru Dongmar Lake. Its extreme location makes it a place for deep meditation and acclimatization for those on a spiritual journey.",
+    "points": ["A very high-altitude pilgrimage site near the Tibetan plateau", "A place for deep meditation suited to its stark, powerful landscape", "A crucial spiritual resting place on the route to Guru Dongmar Lake", "Serves the nomadic pastoralist communities of the Thangu valley"]
+  },
+  "Lachung Monastery": {
+    "about": "Perched on a scenic hilltop above the Lachung river, this monastery is a cultural and religious landmark for the Lachungpa community. Established in 1880, it is a vibrant center for worship and hosts the main festivals of the region, including a notable annual masked dance.",
+    "points": ["A significant cultural and religious landmark in the Lachung valley", "The central place of worship for the Lachungpa community", "A major hub for local festivals and community gatherings", "Offers stunning views of the surrounding mountains and village"]
+  },
+  "Lingthem (Lingthem Gonpa)": {
+    "about": "A remote monastery in the Dzongu valley of North Sikkim, Lingthem Gonpa offers a peaceful retreat and serves as a spiritual site for the local Lepcha community. It is a place where one can experience traditional monastic life in a serene and undisturbed environment.",
+    "points": ["A peaceful and remote retreat center in the heart of Dzongu", "Serves as an important spiritual site for the local Lepcha community", "Preserves and showcases a traditional, slow-paced monastic life", "Surrounded by pristine natural beauty, ideal for contemplation"]
+  },
+  "Malam Monastery": {
+    "about": "Malam Monastery is a vital spiritual center and community gathering place in rural North Sikkim. It serves as the primary venue for religious services, festivals, and social events, playing a key role in strengthening the social and spiritual bonds of the local community.",
+    "points": ["A vital spiritual center for its rural locality", "The main venue for religious services and ceremonies", "Strengthens social bonds by acting as a community gathering place", "Instrumental in preserving local customs and traditions"]
+  },
+  "Nage Monastery": {
+    "about": "A serene site in North Sikkim, Nage Monastery is dedicated to preserving Buddhist traditions through its regular schedule of prayers, rituals, and ceremonies. Its tranquil atmosphere makes it a significant local site for devotees to practice their faith.",
+    "points": ["A significant local site for the practice of Buddhism", "Maintains a tranquil and spiritually charged atmosphere", "Dedicated to the preservation of Buddhist traditions through daily practice", "A place of solace and devotion for the surrounding community"]
+  },
+  "Phensang Monastery": {
+    "about": "Established in 1721, Phensang Monastery is one of the largest monastic institutions in Sikkim and functions as a headquarters for the Nyingma school. Located between Gangtok and Mangan, it has a large community of monks and is renowned for its annual Kagyed Chaam (masked dance) festival held in December.",
+    "points": ["Considered a headquarters for the Nyingma order in Sikkim", "One of the six largest monasteries in the state with a large monk body", "Hosts the sacred and elaborate Kagyed Chaam festival", "Was rebuilt after being destroyed by a fire in 1947"]
+  },
+  "Phodong (Karma Tashi Chokhorling) Monastery": {
+    "about": "An early 18th-century monastery, Phodong is a major seat of the Kagyu school and is counted among the six most important monasteries in Sikkim. It is highly regarded for its beautifully preserved murals, intricate religious paintings (thangkas), and a rich collection of ancient artifacts.",
+    "points": ["Recognized as one of the six most important monasteries of Sikkim", "Features beautiful and well-preserved ancient murals and artifacts", "An important seat of the Karma Kagyu lineage in North Sikkim", "A major center for monastic life, education, and festivals"]
+  },
+  "Ringyim Monastery": {
+    "about": "Surrounded by peaceful, natural scenery in North Sikkim, Ringyim Monastery serves as a religious hub for spiritual learning and community events. It plays an essential role in maintaining the area's spiritual life by providing a space for both study and worship.",
+    "points": ["A local religious hub for Mangan and surrounding areas", "A dedicated space for spiritual learning and monastic education", "Maintains the area's spiritual vibrancy through regular events", "Known for its peaceful surroundings conducive to practice"]
+  },
+  "Shagyong Monastery": {
+    "about": "A smaller monastery in North Sikkim, Shagyong is vital for the local community's religious life. It hosts community prayers and ensures the continuity of daily practices and rituals, playing a grassroots role in the preservation of the Buddhist faith.",
+    "points": ["Vital to the everyday religious life of the local community", "Hosts community prayers and daily ritual observances", "Ensures the continuity of Buddhist practices at a local level", "A cornerstone of the village's spiritual identity"]
+  },
+  "Ship Kunzang Choling Monastery": {
+    "about": "An important spiritual center in a remote part of North Sikkim, Ship Kunzang Choling Monastery is dedicated to preserving Buddhist traditions in areas that are geographically isolated. It serves as a place of solace, devotion, and guidance for the local inhabitants.",
+    "points": ["An important spiritual center in a remote, less-traveled area", "Dedicated to preserving traditions in geographically isolated regions", "A place of solace, devotion, and spiritual guidance for locals", "Maintains the flame of Dharma in the far reaches of Sikkim"]
+  },
+  "Silem Phagyal Monastery": {
+    "about": "A local monastery in North Sikkim, Silem Phagyal serves the immediate spiritual needs of its community. It is a significant site for the preservation of cultural heritage and provides a venue for all important religious ceremonies and life-cycle rituals for the local people.",
+    "points": ["Serves the immediate spiritual needs of the local community", "Dedicated to the preservation of local cultural heritage", "A significant local site for prayers and rituals", "Central to the religious identity of its village"]
+  },
+  "Singchit Ngadag Monastery": {
+    "about": "A remote spiritual center in North Sikkim, Singchit Ngadag Monastery is known for preserving unique local practices and traditions. It acts as a focal point for regional festivals, drawing the community together for important religious and cultural celebrations.",
+    "points": ["A key spiritual center in a remote part of North Sikkim", "Known for preserving unique local practices and festive traditions", "A focal point for local festivals and community celebrations", "Vital for maintaining the cultural identity of its region"]
+  },
+  "Sontam Tensung Monastery": {
+    "about": "A historical monastery in North Sikkim, Sontam Tensung is valued for its role in preserving ancient texts and practices. It is considered a spiritual heritage site, holding a collection of important scriptures and maintaining rituals that have been passed down for generations.",
+    "points": ["Holds significant historical value in its region", "Dedicated to the preservation of ancient texts, scriptures, and practices", "Regarded as a spiritual heritage site by the local community", "A repository of traditional Buddhist knowledge and wisdom"]
+  },
+  "Tareng Gonpa": {
+    "about": "A local monastery in North Sikkim, Tareng Gonpa is dedicated to serving the spiritual needs of the rural villages in its vicinity. It ensures the continuity of religious practice and serves as a central gathering point for the community during important religious observances.",
+    "points": ["Serves the spiritual needs of remote rural villages", "Ensures the continuity of Buddhist practice in its locality", "A central community gathering point for religious events", "Maintains the cultural and spiritual fabric of the area"]
+  },
+  "Tholung Monastery": {
+    "about": "Located in the remote and pristine Lhonak Valley, Tholung is an ancient and highly revered monastery. It serves as a repository for some of Sikkim's most sacred relics and artifacts, which are brought out for public display only once every three years in a special ceremony, making it a major pilgrimage site.",
+    "points": ["A highly revered and remote pilgrimage site in Upper Dzongu", "A repository of sacred and historic artifacts belonging to Sikkim", "Hosts a unique festival every three years to display the holy relics", "Holds immense historic and spiritual value for the entire state"]
+  },
+  "Tingbung Monastery": {
+    "about": "A local religious site in North Sikkim, Tingbung Monastery reinforces community bonds through its regular schedule of prayers and ceremonies. It is a significant site for the local population, playing a central role in their daily spiritual life and seasonal festivals.",
+    "points": ["A significant religious site for the local Tingbung community", "Maintains a schedule of regular prayers and annual ceremonies", "Reinforces community bonds through shared spiritual activities", "A cornerstone of the village's religious and cultural life"]
+  },
+  "Tsawang Choling Monastery": {
+    "about": "Set in a scenic location in North Sikkim, Tsawang Choling Monastery is a center for spiritual learning and practice. It contributes significantly to the region's monastic heritage by educating monks and playing a key role in the preservation and propagation of Buddhist teachings.",
+    "points": ["A center for spiritual learning and monastic education", "Contributes significantly to the monastic heritage of North Sikkim", "Plays a key role in the practice and study of Buddhist philosophy", "Its scenic location provides an inspiring setting for practice"]
+  },
+  "Tsungthang Monastery": {
+    "about": "Located in Chungthang at the sacred confluence of the Lachen and Lachung rivers, this monastery marks a site believed to have been blessed by the visit of Guru Padmasambhava in the 8th century. The site has a rock bearing the Guru's footprint and a spring that is said to have appeared miraculously.",
+    "points": ["A sacred site blessed by Guru Padmasambhava (Guru Rinpoche)", "A key pilgrimage destination at a historically significant location", "Located at the holy confluence of the Lachen and Lachung rivers", "Features a rock with a sacred footprint of Guru Padmasambhava"]
+  },
+  "Chawayng Ani Monastery": {
+    "about": "A nunnery in South Sikkim, Chawayng Ani Monastery is dedicated to supporting the spiritual education and practice of women. It provides a vital space for female monastics to pursue their religious goals and serves as a source of spiritual strength and support for women in the wider community.",
+    "points": ["A vital and supportive space for female monastics (nuns)", "Supports the religious and educational advancement of women", "A dedicated place for spiritual education and practice for nuns", "Contributes to the welfare of the local community"]
+  },
+  "Ben Monastery": {
+    "about": "A smaller monastery in South Sikkim, Ben Monastery serves as a local religious hub for worship and instruction. It is dedicated to maintaining the traditional values of the community and provides a space for daily prayers, teachings, and local ceremonies.",
+    "points": ["A local religious hub for the Ben area community", "A place for daily worship and fundamental religious instruction", "Dedicated to maintaining traditional Buddhist values at the grassroots level", "The center of religious life for the surrounding villages"]
+  },
+  "Bon Monastery": {
+    "about": "Located in Kewzing, this is one of the few monasteries in Sikkim dedicated to the Bon religion, the ancient, pre-Buddhist shamanistic faith of Tibet. It serves as a rare and vital center for the preservation of Bon traditions, rituals, and scriptures, making it a unique spiritual and cultural site.",
+    "points": ["A unique monastery in Sikkim dedicated to the pre-Buddhist Bon faith", "Actively preserves the ancient traditions, texts, and rituals of Bon", "A rare and important spiritual and cultural site for Bon followers", "Offers a fascinating insight into Tibet's indigenous religion"]
+  },
+  "Bumtar Namdroling Monastery": {
+    "about": "Serving the Bumtar area of South Sikkim, this monastery is a significant spiritual center focused on preserving Buddhist traditions. It acts as a focal point for religious and cultural activities, hosting events that bring the community together in shared faith and celebration.",
+    "points": ["A significant spiritual center for the Bumtar region", "Helps in the preservation of local Buddhist traditions and culture", "A focal point for community activities and religious festivals", "Provides spiritual guidance and services to the local populace"]
+  },
+  "Burmiok Norbugang Monastery": {
+    "about": "Set in a serene environment in South Sikkim, Burmiok Norbugang Monastery is a local hub for meditation, prayer, and community gatherings. It reinforces community bonds by providing a peaceful and sacred space for people to practice their faith together.",
+    "points": ["A central religious hub for the Burmiok community", "Offers a serene space for meditation, prayer, and contemplation", "Reinforces community bonds through shared spiritual gatherings", "Hosts local religious events and provides daily worship facilities"]
+  },
+  "Doling Monastery": {
+    "about": "Doling Monastery in South Sikkim is dedicated to serving the spiritual needs of the local villagers. It is a center for community prayer, religious activities, and cultural events, playing a key role in strengthening the cultural identity and spiritual well-being of the village.",
+    "points": ["Primarily serves the spiritual needs of local villagers", "A center for community prayer, festivals, and religious activities", "Strengthens the cultural identity of its local community", "The focal point of the village's religious and social life"]
+  },
+  "Gagyong Monastery": {
+    "about": "A rural monastery in South Sikkim, Gagyong is vital to the religious life of its community. It hosts community prayers and ensures the continuity of daily Buddhist practices and rituals, playing an essential role in the spiritual fabric of the area.",
+    "points": ["Vital to the everyday religious life of its local community", "Hosts community prayers and ensures the continuity of daily practices", "A cornerstone of the village's spiritual and cultural identity", "Provides a space for villagers to connect with their faith"]
+  },
+  "Kewzing (Kewwzing) Monastery": {
+    "about": "Located in the picturesque village of Kewzing in South Sikkim, this monastery is the main spiritual and cultural hub for the local community. It is crucial to the cultural life of the village, preserving traditional practices and hosting the main religious festivals.",
+    "points": ["The key spiritual center for Kewzing village and its surroundings", "Crucial to the cultural and religious life of the local community", "Dedicated to the preservation of traditional Buddhist practices", "Known for its serene location and beautiful architecture"]
+  },
+  "Linge Phagyal Monastery": {
+    "about": "A peaceful monastery in South Sikkim, Linge Phagyal serves the spiritual needs of its community. It is a significant local site dedicated to preserving the area's cultural and religious heritage through regular worship and the observance of traditional ceremonies.",
+    "points": ["Serves the daily spiritual needs of the local community", "Dedicated to the preservation of local religious heritage", "A significant and respected local site for worship", "Known for its peaceful and contemplative atmosphere"]
+  },
+  "Malli Tashi Chodarling Monastery": {
+    "about": "Serving the Malli region of South Sikkim, this monastery is a center for Buddhist learning and contributes to the area's monastic heritage. It plays a key role in the practice and propagation of Buddhist teachings, educating monks and serving the lay community.",
+    "points": ["A center for Buddhist learning and scriptural study", "Contributes to the rich monastic heritage of South Sikkim", "Plays a key role in the practice and dissemination of Dharma", "Serves both the monastic and lay communities of the Malli region"]
+  },
+  "Mangbro Monastery": {
+    "about": "This monastery in South Sikkim serves several rural villages, ensuring the continuation of Buddhist practices in its locality. It acts as a central gathering point for the community, providing a venue for religious observances and cultural events.",
+    "points": ["Serves the spiritual needs of multiple rural villages", "Ensures the continuity of Buddhist practice in a rural setting", "Acts as a central community gathering point for religious events", "Maintains the cultural and spiritual fabric of the local area"]
+  },
+  "Namthang Norbu Tsho-Ling Monastery": {
+    "about": "A spiritual center for the Namthang area in South Sikkim, this monastery is dedicated to preserving local traditions and culture. It stands as a beacon of faith for the community, providing spiritual guidance and a central place for worship and festivals.",
+    "points": ["The main spiritual center for the local people of Namthang", "Dedicated to preserving local Buddhist traditions and culture", "Stands as a beacon of faith and spiritual guidance", "A hub for community worship and religious celebrations"]
+  },
+  "Namthang Nyima Choling Monastery": {
+    "about": "Another important monastery in the Namthang region, Nyima Choling is a local hub for spiritual learning and community events. It provides a space for residents to deepen their understanding of Buddhism and participate in shared religious activities.",
+    "points": ["A local religious hub for education and community events", "Provides a space for spiritual learning and philosophical study", "An important and active local site for the Namthang community", "Hosts workshops, teachings, and regular prayer services"]
+  },
+  "Namtse Ahaley Monastery": {
+    "about": "Located in Ahaley, near the district capital Namchi, this monastery is a center for local worship and religious instruction. It is crucial to the spiritual lives of the local population, serving their day-to-day religious needs and providing a space for community ceremonies.",
+    "points": ["Serves the local population of the Ahaley area near Namchi", "A center for daily worship and religious instruction", "Crucial to the spiritual lives and well-being of its devotees", "Hosts local ceremonies and religious gatherings"]
+  },
+  "Namtse Nga-Dag Monastery": {
+    "about": "This monastery in Namchi supports the preservation of Buddhist traditions by hosting a variety of religious activities. It acts as a spiritual center for the community and is a focal point for festivals, prayers, and teachings in the district headquarters.",
+    "points": ["A spiritual center for the community in Namchi", "Helps in the preservation of Buddhist traditions and rituals", "A focal point for religious activities, festivals, and prayers", "An important part of the religious landscape of South Sikkim's capital"]
+  },
+  "Parbing Monastery": {
+    "about": "A serene monastery in South Sikkim, Parbing provides vital spiritual services and a place for gatherings for the local community. It serves as a venue for religious services and strengthens local faith by being an accessible and active center of worship.",
+    "points": ["A vital spiritual center for the Parbing area", "A primary venue for religious services and community prayers", "Strengthens local faith and community spirit", "Known for its serene and peaceful environment"]
+  },
+  "Rabong Kunphenling Tsechu Monastery": {
+    "about": "This monastery in Rabong (Ravangla) is particularly famous for its annual 'Tsechu' festival, which features spectacular masked dances (Chaam). It is a major cultural and religious hub that attracts a large number of pilgrims and visitors for this vibrant event.",
+    "points": ["A major cultural and religious hub in Ravangla", "Famed for its annual Tsechu festival with elaborate masked dances", "A significant pilgrimage destination, especially during festival time", "Plays a key role in the preservation of traditional performing arts"]
+  },
+  "Rabong Monastery": {
+    "about": "Also known as Palchen Choeling Monastic Institute, this is a prominent monastery near Ravangla. It is a major spiritual center belonging to the Nyingma school and is known for its beautiful murals, impressive statues, and for hosting key festivals that are central to the region's religious calendar.",
+    "points": ["A major spiritual center and monastic institute in Ravangla", "Features beautiful traditional art, murals, and large statues", "A key site for major Buddhist festivals and ceremonies", "An important center for Nyingma teachings and practice"]
+  },
+  "Ralong Monastery": {
+    "about": "One of the most significant monasteries in Sikkim, Ralong is a major seat of the Kagyu order, located near Ravangla. The original monastery was built in the 18th century. It is renowned for its holy and powerful spiritual presence and hosts the famous Kagyu Chaam, a masked dance festival.",
+    "points": ["Considered one of the holiest and most significant monasteries in Sikkim", "A major seat of the Kagyu lineage with a rich history", "Hosts the important Kagyu Chaam (Pang Lhabsol) festival annually", "Home to a large collection of exquisite thangkas and religious paintings"]
+  },
+  "Ralong Palchen Choling Monastery": {
+    "about": "This is the new, modern Karma Kagyu center built near the Old Ralong Monastery. It serves as the official seat of the 12th Gyaltsab Rinpoche, one of the main regents of the Karma Kagyu lineage. Its grand structure and role in continuing the lineage make it a highly important contemporary monastic center.",
+    "points": ["A large, modern Karma Kagyu center and monastic university", "The official seat of H.E. the 12th Goshir Gyaltsab Rinpoche", "Dedicated to continuing the Karma Kagyu lineage of study and practice", "An architectural marvel and a vibrant center of Buddhist activity"]
+  },
+  "Sangmo Sharchog Bephug Monastery": {
+    "about": "A remote and tranquil monastery in South Sikkim, this site is considered a refuge for serious meditation and study. It is associated with a sacred cave and offers an environment of profound peace and spiritual tranquility, vital for the local population and visiting practitioners.",
+    "points": ["Vital to the spiritual life of the local population in a remote area", "Offers a peaceful and powerful environment for meditation and retreat", "Associated with a sacred cave, enhancing its spiritual significance", "A sanctuary of spiritual tranquility and deep practice"]
+  },
+  "Serdup Choling Monastery": {
+    "about": "A serene site in South Sikkim, Serdup Choling Monastery is dedicated to preserving Buddhist traditions through its regular schedule of prayers and ceremonies. Its tranquil atmosphere makes it an important local site for devotees to practice their faith and find peace.",
+    "points": ["An important local site for Buddhist worship", "Maintains a tranquil and spiritually conducive atmosphere", "Dedicated to the preservation of traditions through daily prayers and rituals", "A place of solace and devotion for the community"]
+  },
+  "Sorok Tamang Monastery": {
+    "about": "This monastery is a key spiritual center for the Tamang community in South Sikkim. It is dedicated to preserving the unique Buddhist traditions, language, and cultural identity of the Tamang people, making it a site of great cultural and religious importance.",
+    "points": ["Dedicated to preserving the unique Buddhist traditions of the Tamang community", "Strengthens the cultural and linguistic identity of the Tamang people", "A key spiritual and cultural center for the community in Sikkim", "Hosts festivals and events specific to Tamang traditions"]
+  },
+  "Suiram Risung Monastery": {
+    "about": "A smaller monastery in South Sikkim, Suiram Risung serves as a center for local religious activities and the preservation of traditions. It maintains a strong community presence and is the primary venue for prayers, rituals, and local festivals.",
+    "points": ["A center for local religious activities and community events", "Dedicated to the preservation of local traditions and customs", "Maintains a strong and visible presence within the community", "The primary venue for prayers and local festivals"]
+  },
+  "Tekling Dzokchen Monastery": {
+    "about": "This is a Nyingma monastery in South Sikkim that specifically focuses on the teachings of Dzokchen, or 'Great Perfection.' It is a center for advanced practice and is dedicated to preserving this profound lineage of teachings, attracting serious practitioners.",
+    "points": ["A Nyingma center with a specific focus on Dzokchen teachings", "Dedicated to preserving the advanced lineage of the Great Perfection", "A center for high-level practice, study, and meditation retreats", "Important for practitioners seeking profound philosophical instruction"]
+  },
+  "Wok Pabong Monastery": {
+    "about": "A religious hub in South Sikkim, Wok Pabong provides a space for spiritual learning and community events. It is an important local site that plays a key role in the religious life of the area, hosting teachings, ceremonies, and festivals.",
+    "points": ["A local religious hub for the Wok area community", "A dedicated space for spiritual learning and monastic education", "An important local site for festivals and religious ceremonies", "Maintains the area's spiritual vibrancy through regular events"]
+  },
+  "Yangang Changchub Tamu Monastery": {
+    "about": "Serving the Yangang area of South Sikkim, this center reinforces community bonds through its regular schedule of prayers and ceremonies. It is a significant local site that plays a central role in the daily spiritual life and seasonal festivals of the community.",
+    "points": ["A significant local site for the Yangang community", "Maintains a schedule of regular prayers and annual ceremonies", "Reinforces community bonds through shared spiritual activities", "A cornerstone of the village's religious and cultural life"]
+  },
+  "Yangang Gonpa": {
+    "about": "A prominent monastery in the Yangang region of South Sikkim, this Gonpa is a key spiritual center. It is dedicated to preserving Buddhist traditions and stands as a beacon of faith for the local population, providing guidance and a central place for worship.",
+    "points": ["A key spiritual center in the Yangang sub-division", "Dedicated to the preservation of Buddhist traditions and local culture", "Stands as a beacon of faith for the local community", "A hub for community worship and religious celebrations"]
+  },
+  "Namchi Monastery (Decchen Choyling Gumpa)": {
+    "about": "Located in the district capital of Namchi, this monastery is a significant spiritual center known for its stunning panoramic views of the Khangchendzonga range and the Rangit valley. It is an active center of worship and a key religious site for the residents of Namchi.",
+    "points": ["A significant religious site in the town of Namchi", "Offers breathtaking panoramic views of the Himalayan mountains", "A key spiritual center for the local community and visitors", "Home to beautiful murals and statues depicting Buddhist deities"]
+  },
+  "Tendong Gumpa": {
+    "about": "An old and highly sacred monastery situated on the holy Tendong Hill in South Sikkim. This site is revered by the Lepcha community as the place that saved their ancestors from a great flood. It is a place of immense historical and mythological importance, reachable by a trek through dense forest.",
+    "points": ["One of the oldest monastic sites in South Sikkim", "Highly revered by the Lepcha community as a place of refuge", "Holds deep historic and mythological importance in Sikkimese lore", "Located on a sacred peak offering stunning 360-degree views"]
+  },
+  "Pemayangtse Monastery": {
+    "about": "Founded in the 17th century by Lhatsun Chenpo, Pemayangtse is the premier monastery of the Nyingma school of Tibetan Buddhism in Sikkim. Located near Pelling in West Sikkim, it is one of the oldest and most important monasteries in the state. Monks from this monastery were traditionally from the Bhutia aristocracy.",
+    "points": ["The head monastery of the Nyingma order in Sikkim", "One of the oldest, most famous, and important monasteries in the state", "A major center for pilgrimage, monastic education, and ritual", "Houses the 'Zangdok Palri,' an exquisite seven-tiered wooden model of Guru Rinpoche's heavenly palace"]
+  },
+  "Tashiding Monastery": {
+    "about": "Perched on a heart-shaped hill in West Sikkim, Tashiding is considered one of the most sacred and holy monasteries in the state. It is believed that a single glimpse of the monastery can cleanse a person's sins. It is renowned for the 'Bumchu' festival, a sacred water ceremony that predicts the fortunes of Sikkim for the coming year.",
+    "points": ["Considered one of the most sacred pilgrimage sites in Sikkim", "A place where great merit is believed to be attained by devotees", "Hosts the unique and sacred 'Bumchu' (holy water pot) festival", "Surrounded by numerous chortens and mani walls, creating a powerful spiritual ambiance"]
+  }
+}

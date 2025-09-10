@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Monasteries - Sikkim Monasteries</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-mountain text-3xl text-red-600 mr-3"></i>
+                    <span class="text-2xl font-bold text-gray-800">Sikkim Monasteries</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-red-600">Home</a>
+                    <a href="monasteries.html" class="text-red-600 font-semibold">Explore Monasteries</a>
+                    <a href="map.html" class="text-gray-700 hover:text-red-600">Map</a>
+                    <a href="events.html" class="text-gray-700 hover:text-red-600">Events</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-red-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                <a href="monasteries.html" class="block py-2 text-red-600 font-semibold">Explore Monasteries</a>
+                <a href="map.html" class="block py-2 text-gray-700">Map</a>
+                <a href="events.html" class="block py-2 text-gray-700">Events</a>
+                <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-20 pb-12 bg-gradient-to-r from-red-600 to-red-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Explore Monasteries</h1>
+            <p class="text-xl md:text-2xl">Discover the spiritual heritage of Sikkim</p>
+        </div>
+    </section>
+
+    <!-- Monastery Details Modal -->
+    <div id="monastery-modal" class="feature-modal hidden">
+        <div class="feature-modal-backdrop"></div>
+        <div class="feature-modal-dialog">
+            <button class="feature-modal-close" aria-label="Close"><i class="fas fa-times"></i></button>
+            <div class="feature-modal-media">
+                <img id="monastery-image" src="" alt="Monastery image" loading="lazy">
+            </div>
+            <div class="feature-modal-content">
+                <h3 id="monastery-title" class="text-2xl font-bold mb-2"></h3>
+                <h4 class="text-sm font-semibold text-gray-800 mb-1">About the Monastery</h4>
+                <p id="monastery-about" class="text-gray-700 mb-3"></p>
+                <h4 class="text-sm font-semibold text-gray-800 mb-1">Its Importance</h4>
+                <ul id="monastery-points" class="list-disc pl-5 space-y-2 text-gray-700"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filters and Search -->
+    <section class="py-8 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Search monasteries...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <select id="region-filter">
+                        <option value="">All Regions</option>
+                        <option value="gangtok">Gangtok</option>
+                        <option value="pelling">Pelling</option>
+                        <option value="lachung">Lachung</option>
+                        <option value="lachen">Lachen</option>
+                    </select>
+                    <select id="popularity-filter">
+                        <option value="">All Popularity</option>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                    <select id="age-filter">
+                        <option value="">All Ages</option>
+                        <option value="ancient">Ancient (500+ years)</option>
+                        <option value="medieval">Medieval (200-500 years)</option>
+                        <option value="modern">Modern (<200 years)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monasteries Grid -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div id="monasteries-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Monastery Card 1 -->
+                <div class="monastery-card card-hover" data-region="gangtok" data-popularity="high" data-age="ancient">
+                    <img src="assets/Rumtek Monastery.jpg" alt="Rumtek Monastery" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Rumtek Monastery</h3>
+                        <p class="text-gray-600 mb-4">The largest monastery in Sikkim, known for its stunning architecture and spiritual significance.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Gangtok • Ancient</span>
+                            <a href="monastery-detail.html?id=rumtek" class="bg-red-600 text-white px-4 py-2 rounded-full text-sm hover:bg-red-700 transition duration-300">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monastery Card 2 -->
+                <div class="monastery-card card-hover" data-region="pelling" data-popularity="high" data-age="ancient">
+                    <img src="assets/Pemayangtse Monastery.jpg" alt="Pemayangtse Monastery" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Pemayangtse Monastery</h3>
+                        <p class="text-gray-600 mb-4">One of the oldest monasteries in Sikkim, offering panoramic views of the Himalayas.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Pelling • Ancient</span>
+                            <a href="monastery-detail.html?id=pemayangtse" class="bg-red-600 text-white px-4 py-2 rounded-full text-sm hover:bg-red-700 transition duration-300">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monastery Card 3 -->
+                <div class="monastery-card card-hover" data-region="gangtok" data-popularity="medium" data-age="medieval">
+                    <img src="assets/Enchey Monastery.jpg" alt="Enchey Monastery" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Enchey Monastery</h3>
+                        <p class="text-gray-600 mb-4">A beautiful monastery known for its annual Chaam dance festival.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Gangtok • Medieval</span>
+                            <a href="monastery-detail.html?id=enchey" class="bg-red-600 text-white px-4 py-2 rounded-full text-sm hover:bg-red-700 transition duration-300">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monastery Card 4 -->
+                <div class="monastery-card card-hover" data-region="lachung" data-popularity="high" data-age="ancient">
+                    <img src="assets/Lachung Monastery.jpg" alt="Lachung Monastery" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lachung Monastery</h3>
+                        <p class="text-gray-600 mb-4">A serene monastery in the northern region, surrounded by snow-capped mountains.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Lachung • Ancient</span>
+                            <a href="monastery-detail.html?id=lachung" class="bg-red-600 text-white px-4 py-2 rounded-full text-sm hover:bg-red-700 transition duration-300">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monastery Card 5 -->
+                <div class="monastery-card card-hover" data-region="lachen" data-popularity="medium" data-age="medieval">
+                    <img src="assets/Lachen Monastery.jpg" alt="Lachen Monastery" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lachen Monastery</h3>
+                        <p class="text-gray-600 mb-4">A peaceful monastery offering spiritual retreats and meditation sessions.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Lachen • Medieval</span>
+                            <a href="monastery-detail.html?id=lachen" class="bg-red-600 text-white px-4 py-2 rounded-full text-sm hover:bg-red-700 transition duration-300">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monastery Card 6 -->
+                <div class="monastery-card card-hover" data-region="gangtok" data-popularity="low" data-age="modern">
+                    <img src="assets/Tashiding Monastery.jpg" alt="Tashiding Monastery" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Tashiding Monastery</h3>
+                        <p class="text-gray-600 mb-4">A modern monastery known for its unique architecture and peaceful atmosphere.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Gangtok • Modern</span>
+                            <a href="monastery-detail.html?id=tashiding" class="bg-red-600 text-white px-4 py-2 rounded-full text-sm hover:bg-red-700 transition duration-300">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="load-more" class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-semibold transition duration-300">
+                    Load More Monasteries
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mountain text-2xl text-red-600 mr-2"></i>
+                        <span class="text-xl font-bold">Sikkim Monasteries</span>
+                    </div>
+                    <p class="text-gray-400">Discover the spiritual heritage of Sikkim through its ancient monasteries.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="monasteries.html" class="text-gray-400 hover:text-white">Explore Monasteries</a></li>
+                        <li><a href="map.html" class="text-gray-400 hover:text-white">Interactive Map</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white">Events & Festivals</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Gangtok, Sikkim</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i>+91 123 456 7890</p>
+                    <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i>info@sikkimmonasteries.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Sikkim Monasteries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
